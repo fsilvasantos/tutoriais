@@ -1,0 +1,57 @@
+<!--
+// **********************************************************************
+//  
+//  
+//  T U T O R I A I S
+//  
+//
+// **********************************************************************
+-->
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>... tUtOrIaIs ...</title>      
+      <meta charset="UTF-8">
+      <meta name="description" content="Tutoriais">
+      <meta name="keywords" content="PHP">
+      <meta name="author" content="SilvaCorp">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script type="text/javascript" src="js/script.js"></script>
+   </head>
+   <body>
+      <div id="header">
+         <h1>... tUtOrIaIs ...</h1>
+         <p>
+            Desde <span id="h3_data_cria"></span> até hoje <span id="h3_data_hoje"></span>!!!
+         </p>
+      </div>      
+
+      <div id="content">
+         <div id="w3schools" class="tutorial_school" onclick="sigaPara('./w3schools')">
+            <p>w3schools</p>
+         </div>
+         <div id="tutorialspoint" class="tutorial_school" onclick="sigaPara('./tutorialspoint')">
+            <p>tutorialspoint</p>
+         </div>
+      </div>
+
+      <div id="footer">
+         <p>... SilvaCorp ...</p>
+      </div>
+   </body>
+</html>
+
+<script type="text/javascript">   
+   
+   // ----------------------------------------------------------------------
+   // onLoad
+   // ----------------------------------------------------------------------
+   var vDataCria = document.getElementById('h3_data_cria');
+   var vDataHoje = document.getElementById('h3_data_hoje');
+   const dtHoje = new Date();
+   
+   vDataCria.innerHTML = '2022/03';                            // Data de criacao do site
+   vDataHoje.innerHTML = dtHoje.toLocaleDateString("pt-BR");   // Data atual
+
+</script>

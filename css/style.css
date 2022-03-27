@@ -1,0 +1,112 @@
+/*
+// **********************************************************************
+//  
+//  
+//  C S S
+//  
+//
+// **********************************************************************
+*/
+
+/* 
+// ======================================================================
+//
+//  BODY
+//
+// ======================================================================
+*/
+
+#header {
+    text-align: center;
+    border: 1px dashed red;
+ }
+
+ #content {
+    min-width: 640px;
+    min-height: 480px;
+    text-align: center;
+    border: 1px dashed green;
+ }
+
+ #footer {
+    text-align: center;
+    height:50px; 
+    border:1px dashed blue;
+ }
+
+
+ /* 
+// ======================================================================
+//
+//  TUTORIAIS (sites, linguagens, icones, etc...)
+//
+// ======================================================================
+*/
+
+/*
+// ----------------------------------------------------------------------
+// Site
+// ----------------------------------------------------------------------
+*/
+ .tutorial_school {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border: 1px dashed black;
+    text-align: center;
+    cursor: pointer;
+ }
+
+/*
+// ----------------------------------------------------------------------
+// Linguagem
+// ----------------------------------------------------------------------
+*/
+ .tutorial_subject {
+   display: inline-block;
+   width: 150px;
+   height: 150px;
+   margin: 10px;
+   border: 1px dashed black;
+   text-align: center;
+   cursor: pointer;
+}
+
+/*
+// ----------------------------------------------------------------------
+// Exemplo (icone + texto)
+// ----------------------------------------------------------------------
+*/
+.tutorial_sample {   
+   
+   width: 200px;
+   height: 60px;
+   margin: 10px;
+   border: 1px dashed black;   
+   cursor: pointer;
+   text-align: left;
+   
+}
+
+.sample_icon {
+
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   margin: 5px;
+   border: 1px dashed black;
+   vertical-align: top;
+
+}
+
+.sample_text {
+
+   display: inline-block;
+   width: 100px;
+   height: 50px;
+   margin: 5px;
+   border: 1px dashed black;
+   vertical-align: top;  
+
+}
