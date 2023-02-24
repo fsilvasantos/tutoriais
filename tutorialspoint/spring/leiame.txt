@@ -1,0 +1,11 @@
+Links que foram úteis durante o desenvolvimento:
+
+
+How to deploy a WAR file to Tomcat 5 different ways
+https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Top-5-ways-to-deploy-a-WAR-file-to-Tomcat
+
+Instalação e configuração do Apache Tomcat no Eclipse
+https://www.devmedia.com.br/instalacao-e-configuracao-do-apache-tomcat-no-eclipse/27360
+
+Spring Packages
+https://repo.spring.io/ui/native/release/org/springframework/spring/4.0.0.RELEASE/
