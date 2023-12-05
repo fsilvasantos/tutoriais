@@ -1,8 +1,8 @@
 <?php
 //complete code for index.php
-$title = "Test title";
-$content = "<h1>Hello World</h1>";
-//indicate the relative path to the file to include
+$pageData = new stdClass();
+$pageData->title = "New, object-oriented test title";
+$pageData->content = "<h1>Hello from an object</h1>";
 require "templates/page.php";
 echo $page;
 ?>
