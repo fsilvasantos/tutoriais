@@ -7,11 +7,12 @@ $nav = "";
 $info = "";
 
 include_once "views/navigation.php";
+
 $pageData = new stdClass();
 $pageData->title = "Thomas Blom Hansen: Portfolio site";
+$pageData->css = "<link href='css/layout.css' rel='stylesheet' />";
 $pageData->content = $nav;
 
-//changes begin here
 $navigationIsClicked = isset($_GET['page']);
 if ($navigationIsClicked ) 
 {
@@ -23,7 +24,10 @@ else
 }
 
 include_once "views/$fileToLoad.php";
+
 $pageData->content .= $info;
+
 require "templates/page.php";
+
 echo $page;
 ?>
