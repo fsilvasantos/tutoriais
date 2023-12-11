@@ -1,6 +1,6 @@
 <?php
 //complete code for views/quizform.php
-$info = "<form method='post' action='index.php?page=quiz'>
+$info = "<form method='post' action='index.php?page=newquiz'>
 <p>Is it hard fun to learn PHP?</p>
 <select name='answer'>
 <option value='yes'>Yes, it is</option>
