@@ -1,12 +1,12 @@
 <?php
-function getParagraph(){
-    return "<p>This paragraph came from a function</p>";
+function getParagraph( string $content ) : string {
+    return "<p>$content</p>";
 }
 
-$output = getParagraph();
+$output = getParagraph( "I want this text in my first paragraph" );
 $output .= "<h1>Just some heading</h1>";
-$output .= getParagraph();
+$output .= getParagraph("...and this in my last paragraph." );
 
 echo $output;
-echo getParagraph();
+echo getParagraph("But I want to finish it with this paragraph");
 ?>
