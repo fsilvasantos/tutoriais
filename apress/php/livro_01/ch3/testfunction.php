@@ -1,7 +1,12 @@
 <?php
 function getParagraph(){
-    echo "<p>This paragraph came from a function</p>";
+    return "<p>This paragraph came from a function</p>";
 }
 
-getParagraph();
+$output = getParagraph();
+$output .= "<h1>Just some heading</h1>";
+$output .= getParagraph();
+
+echo $output;
+echo getParagraph();
 ?>
