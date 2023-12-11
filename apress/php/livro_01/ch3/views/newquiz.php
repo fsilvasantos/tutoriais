@@ -5,10 +5,17 @@ if ( $quizIsSubmitted )
 {
     $answer = $_POST['answer'];
     $info = showQuizResponse( $answer );
+    $answer = $_POST['answer'];
+    $info = showQuizResponse( $answer );
+    
+    //inspect the $_POST superglobal array
+    $info .= "<pre>";
+    $info .= print_r($_POST, true);
+    $info .= "</pre>";
 } 
 else 
 {
-    include_once "views/quiz.php";
+    include_once "views/newquiz.php";
 }
 
 //declare a new function
@@ -16,7 +23,7 @@ function showQuizResponse( string $answer ) : string
 {
     $response = "<p>You clicked $answer</p>";
     $response .= "<p>
-    <a href='index.php?page=newquiz'>Try quiz again?</a>
+    <a href='index.php?page=quiz'>Try quiz again?</a>
     </p>";
 
     return $response;
