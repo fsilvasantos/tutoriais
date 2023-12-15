@@ -1,16 +1,24 @@
 <?php
 //complete source code for views/gallery.php
-//function definition
+//edit existing function
 function showImages() : string
 {
-    $out = "<h1>Image Gallery</h1>";
+    $out = "<h1>Images Gallery</h1>";
     $out .= "<ul id='images'>";
-    $out .= "<li>I will soon list all images</li>";
+    $dir_name = "imgs";
+    chdir($dir_name);
+    $images = glob("*.jpg");
+
+    foreach($images as $image) 
+    {
+        $out .= '<li><img src="'.$dir_name. '/' .$image.'" width="50%" /></li>';
+    }
+
     $out .= "</ul>";
 
     return $out;
+
 }
 
-//function call
 $info = showImages();
 ?>
