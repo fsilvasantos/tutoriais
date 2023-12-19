@@ -1,9 +1,25 @@
 <?php
-$info = "
-<h1>Upload New jpg Images</h1>
-<form method='post' action='index.php?page=upload' enctype='multipart/form-data' >
-<label>Find a jpg image to upload</label>
-<input type='file' name='image-data' accept='image/jpeg'/>
-<input type='submit' value='upload' name='new-image' />
-</form>";
-?>
+//complete source code for views/upload.php
+function upload()
+{
+    include_once "classes/Uploader.class.php";
+
+    //image-data is the name attribute used in <input type='file' />
+    $uploader = new Uploader("image-data");
+    $uploader->saveIn("imgs");
+    $fileUploaded = $uploader->save();
+
+    if ($fileUploaded) 
+    {
+        $out = "New file uploaded to Images Gallery";
+    } 
+    else 
+    {
+        $out = "Something went wrong";
+    }
+
+    return $out;
+
+}
+
+$info = upload();
